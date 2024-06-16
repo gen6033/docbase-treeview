@@ -1,0 +1,86 @@
+.js-main .bodgoR{
+  grid-template-columns: 300px 1fr;
+}
+.js-main .bodgoR .cJUJCj{
+  width: 100%;
+}
+.js-main .bodgoR section{
+  width: 100%;
+}
+#docbase-treeview-tree {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-y: auto;
+}
+#docbase-treeview-tree ul a{
+  color: inherit;
+  line-height: 1.3em;
+  text-decoration: none;
+}
+#docbase-treeview-tree ul a:hover{
+  text-decoration: underline;
+}
+#docbase-treeview-tree ul a.active{
+  font-weight: bold;
+}
+
+#docbase-treeview-tree ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+#docbase-treeview-tree > ul {
+  display: block;
+}
+#docbase-treeview-tree li {
+  display: block;
+  padding: 0;
+  padding-top: 5px;
+  text-align: left;
+  text-indent: -0.7em; /* 1em - 0.3em */
+}
+
+.docbase-treeview-folder,
+.docbase-treeview-file {
+  cursor: pointer;
+}
+
+.docbase-treeview-folder:before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.3em;
+}
+.docbase-treeview-file:before {
+  content: "・";
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.docbase-treeview-folder.open:before {
+  content: "▼";
+}
+
+.docbase-treeview-folder + ul {
+  display: none;
+}
+.docbase-treeview-folder.open + ul {
+  display: block;
+}
+
+#docbase-treeview-create-child{
+  display: block;
+  background-color: rgb(86, 146, 206);
+  color: white;
+  margin-top: 20px;
+  padding: 13px 30px;
+  border: 1px solid rgb(76, 136, 196);
+  border-radius: 5px;
+  width: 100%;
+}
+#docbase-treeview-create-child:hover{
+  background-color: rgb(76, 136, 196);
+}
+#docbase-treeview-create-child:disabled{
+  background-color: gray;
+  border: none;
+}
